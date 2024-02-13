@@ -9,12 +9,12 @@ class Server{
         this.usuarioPath = '/api/usuarios';
         this.authPath = '/api/auth';
 
-        this.connectarDB();
+        this.conectarDB();
         this.middlewares();
         this.routes();
     }
 
-    async connectarDB(){
+    async conectarDB(){
         await dbConection();
     }
 

@@ -21,6 +21,18 @@ const Usuario = Schema({
         required:['indica si el usuario es profesor o alumno'],
         enum: ["TEACHER_ROLE", "STUDENT_ROLE"]
     },
+    curso1:{
+        type: String,
+        required:["El curso del alumno"]
+    },
+    curso2:{
+        type: String,
+        required:["El curso del alumno"]
+    },
+    curso3:{
+        type: String,
+        required:["El curso del alumno"]
+    },
     estado:{
         type: Boolean,
         default: true
