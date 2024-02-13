@@ -9,6 +9,6 @@ const dbConection = async () => {
     }
 }
 
-module.export = {
+module.exports = {
     dbConection
 }
