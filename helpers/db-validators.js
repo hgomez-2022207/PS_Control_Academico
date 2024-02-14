@@ -8,3 +8,22 @@ const esRoleValido = async (role = '') => {
     }
 }
 
+const existeEmail = async (correo = '') => {
+    const existeEmail = await Usuario.findOne({correo});
+    if(existeEmail){
+        throw new Error(`El usuario con el ${ id } no existe`);
+    }
+}
+
+const existeUsuarioById = async (id = '') => {
+    const existeUsuario = await Usuario.findOne({id});
+    if(existeUsuario){
+        throw new Error(`El usuario con el ${id} no existe`);
+    }
+}
+
+module.exports = {
+    esRoleValido,
+    existeEmail,
+    existeUsuarioById
+}
