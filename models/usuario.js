@@ -1,6 +1,6 @@
-const {Schema, model} = require('mongoodse');
+const {Schema, model} = require('mongoose');
 
-const Usuario = Schema({
+const UsuarioSchema = Schema({
     nombre:{
     type: String,
     required:['Nombre real del usuario']
@@ -44,7 +44,7 @@ const Usuario = Schema({
 
 });
 
-Usuario.methods.toJSON = function(){
+UsuarioSchema.methods.toJSON = function(){
     const{ __v, password, _id, ...usuario} = this.toObject();
     usuario.uid = _id;
     return usuario;
