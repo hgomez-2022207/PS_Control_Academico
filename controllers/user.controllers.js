@@ -27,7 +27,28 @@ const usuarioDelete = async (req, res) =>{
     })
 }
 
+const putUsuarios = async (req, res = response) =>{
+    const{ id } = req.params;
+    const { _id, password, google, email, curso1, curso2, curso3, ...resto} = req.body;
+
+    if(password){
+        const salt = bcryptjs.genSaltSync();
+        resto.password = bcryptjs.hashSync(password, salt);
+    }
+
+    /*await Usuario.findByIdAndUpdate(id, resto);
+    const usuario = Usuario.findOne({id});*/
+
+    const usuario = await Usuario.findByIdAndUpdate(id, resto);
+
+    res.status(200).json({
+        msg: "Perfil de alumno ha sido Actualizado",
+        usuario
+    });
+}
+
 module.exports = {
     usuarioPost,
-    usuarioDelete
+    usuarioDelete,
+    putUsuarios
 }

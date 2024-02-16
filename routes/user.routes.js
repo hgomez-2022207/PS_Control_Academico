@@ -9,7 +9,7 @@ const { validarJWT } = require('../middlewares/validar-jwt');
 
 // const {usuarioPost} = require('../helpers/db-validators');
 
-const {usuarioPost, usuarioDelete} = require('../controllers/user.controllers');
+const {usuarioPost, usuarioDelete, putUsuarios} = require('../controllers/user.controllers');
 
 const {existeEmail, esRoleValido, existeUsuarioById} = require('../helpers/db-validators');
 
@@ -29,6 +29,17 @@ router.post(
         validarCampos
     ], usuarioPost
 );  
+
+router.put(
+    "/:id",
+    [
+        check('id','El id no es valido').isMongoId(),
+        check('id').custom(existeUsuarioById),
+        check("nombre","El nombre no debe estar vacio").not().isEmpty(),
+        //check('role').custom(esRoleValido),
+        validarCampos
+    ], putUsuarios
+);
 
 router.delete(
     "/:id",
