@@ -4,10 +4,10 @@ const bycrypt = require('bcryptjs');
 const { generarJWT } = require("../helpers/generar-jwt");
 
 const login = async (req = request, res = request) => {
-    const {correo, password} = req.body;
+    const {email, password} = req.body;
 
     try{
-        const usuario = await Usuario.findOne({correo});
+        const usuario = await Usuario.findOne({email});
 
         if(!usuario){
             return res.status(400).json({
@@ -34,7 +34,7 @@ const login = async (req = request, res = request) => {
         res.status(200).json({
             msg: "Welcome",
             usuario,
-            token
+            tokken
         })
 
     }catch(e){
