@@ -4,6 +4,10 @@ const CursoSchema = Schema({
     curso:{
         type:String,
         required: [true, 'El curso es necesaro.']
+    },
+    estado:{
+        type: Boolean,
+        default: true
     }
 });
 
