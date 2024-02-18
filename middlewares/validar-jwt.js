@@ -3,16 +3,16 @@ const Usuario = require('../models/usuario');
 const {request, response} = require('express');
 
 const validarJWT = async(req = request, res = response, next) => {
-    const token = req.header('x-token');
+    const tokken = req.header('x-token');
 
-    if(token){
+    if(!tokken){
         return res.status(401).json({
             msg: 'No hay token en la peticion',
         });
     }
 
     try{
-        const { uid } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
+        const { uid } = jwt.verify(tokken, process.env.SECRETORPRIVATEKEY);
         const usuario = await Usuario.findById(uid);
         if(!usuario){
             return res.status(401).json({
