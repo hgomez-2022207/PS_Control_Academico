@@ -18,6 +18,10 @@ router.post(
 );
 
 router.get(
+    '/', cursoGet
+);
+
+router.get(
     "/:id",
     [
         check('id','No es un curso').isMongoId(),
