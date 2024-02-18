@@ -2,10 +2,10 @@ const { Router } = require('express');
 const { check } = require('express-validator');
 
 const { validarCampos} = require('../middlewares/validar-campos');
-const { validarJWT } = require('../middlewares/validar-jwt');
+const { validarJWT } = require('../middlewares');
 
 const{ cursoPost, getCursoById, cursoGet, cursoPut, cursoDelete } = require('../controllers/curso.controller');
-const {existeCursoById} = require('../helpers/db-validators');
+const {existeCursoById, esRoleValido} = require('../helpers/db-validators');
 
 const router = Router();
 
@@ -36,6 +36,17 @@ router.put(
         check('nombre','Escriba la nueva informacion del curso.').not().isEmpty(),
         
     ],cursoPut
+);
+
+router.delete(
+    "/:id",
+    [
+        // validarJWT,
+        //tieneRolAutorizado('TEACHER_ROLE'),
+        check('id','Curso no existente').isMongoId(),
+        check('role').custom(esRoleValido),
+       // validarCampos
+    ],cursoDelete
 );
 
 module.exports = router;
