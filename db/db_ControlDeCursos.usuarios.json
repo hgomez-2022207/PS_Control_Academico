@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "65cefe7714709e2860365c1a"
+  },
+  "nombre": "Mario Gonzales",
+  "email": "mgomez-2022208@kinal.edu.gt",
+  "password": "$2a$10$xemGwDsLkYnrAF7U/rN.VOxJNVg6D7Ie3jYThskYM.37DodArjMD.",
+  "role": "TEACHER_ROLE",
+  "curso1": "Matematica",
+  "curso2": "Etica",
+  "curso3": "Informatica",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ceff65306f1c00b3bd0fe7"
+  },
+  "nombre": "Brandon Gomez",
+  "email": "bgomez-2022208@kinal.edu.gt",
+  "password": "$2a$10$rWzwq0ZgV01bnr0/TmGfOeULYNK9zgI2SeZ6k4ZZOc0.5F1h4wMTu",
+  "role": "STUDENT_ROLE",
+  "curso1": "Matematica",
+  "curso2": "Etica",
+  "curso3": "Informatica",
+  "estado": false,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cf08aaaabda1206e5b9f81"
+  },
+  "nombre": "Brandon Gomez",
+  "email": "bgomez-2022208@kinal.edu.gt",
+  "password": "$2a$10$x6Bs4PglGlv2ui8fUBz5.OqwP/e297zzGfUYYi8rVvo.Yr/kuD4Hq",
+  "role": "TEACHER_ROLE",
+  "curso1": "Matematica",
+  "curso2": "Etica",
+  "curso3": "Informatica",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d11b37f42637a71645522e"
+  },
+  "nombre": "Brandon Gomez",
+  "email": "bgomez-2022208@kinal.edu.gt",
+  "password": "$2a$10$okiDTPGAHXw84Pa8y/Qv3efWUPzPavObLDKCBpxMzseQRH78Rknj2",
+  "role": "STUDENT_ROLE",
+  "curso1": "Matematica",
+  "curso2": "Etica",
+  "curso3": "Informatica",
+  "estado": true,
+  "google": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d1c47a14c42c1d5a985fcf"
+  },
+  "nombre": "Adolfo Gonzales",
+  "email": "agomez-2022210@kinal.edu.gt",
+  "password": "$2a$10$ASJz1NZA/5Bp4w9TnjDYquj29fTVODALKy6j3dUUnb5cgtQY6CPI6",
+  "role": "STUDENT_ROLE",
+  "curso1": "Matematica",
+  "curso2": "Etica",
+  "curso3": "Informatica",
+  "estado": true,
+  "google": false,
+  "__v": 0
+}]

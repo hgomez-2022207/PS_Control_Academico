@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "65d02c256c4c58f7a63f185e"
+  },
+  "nombre": "Informatica",
+  "\"estado\": true,": ""
+},
+{
+  "_id": {
+    "$oid": "65d156afced8b341f1306b8e"
+  },
+  "nombre": "Matematica",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d156cbced8b341f1306b90"
+  },
+  "nombre": "Filosofia I",
+  "estado": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d18223fd5b608a11517058"
+  },
+  "nombre": "Matematica II",
+  "estado": false
+},
+{
+  "_id": {
+    "$oid": "65d18249fd5b608a1151705a"
+  },
+  "nombre": "Electronica",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "65d1c48414c42c1d5a985fd1"
+  },
+  "nombre": "Filosofia III",
+  "estado": true,
+  "__v": 0
+}]
