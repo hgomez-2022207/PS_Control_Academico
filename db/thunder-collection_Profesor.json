@@ -1,0 +1,119 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Profesor",
+    "dateExported": "2024-02-18T09:00:08.971Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "05c3df25-0419-4e7c-91d8-ce08a9e6a5fa",
+            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "containerId": "",
+            "name": "post profesor",
+            "url": "http://localhost:3000/api/Usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-16T07:02:17.600Z",
+            "modified": "2024-02-18T08:48:48.684Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Adolfo Gonzales\",\n  \"email\":\"agomez-2022210@kinal.edu.gt\",\n  \"password\":\"1234567\",\n  \"role\":\"STUDENT_ROLE\",\n  \"curso1\":\"Matematica\",\n  \"curso2\":\"Etica\", \n  \"curso3\":\"Informatica\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "83a3d424-05db-44ce-a2b5-e3911ba5c6dd",
+            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "containerId": "",
+            "name": "post curso",
+            "url": "http://localhost:3000/api/cursos",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-17T03:42:59.829Z",
+            "modified": "2024-02-18T08:49:08.545Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Filosofia III\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aaefd7e3-9e97-4e7c-a7b2-d9fa99064378",
+            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "containerId": "",
+            "name": "get cursoBiId",
+            "url": "http://localhost:3000/api/cursos/65d18223fd5b608a11517058",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-18T01:20:56.885Z",
+            "modified": "2024-02-18T08:50:05.210Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "16a7ef81-19c4-44fe-9a90-b81253126cb2",
+            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "containerId": "",
+            "name": "get cursos",
+            "url": "http://localhost:3000/api/cursos?desde=1&limite=10",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-18T01:22:04.628Z",
+            "modified": "2024-02-18T01:53:31.329Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "desde",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limite",
+                    "value": "10",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "122e90af-8ecf-43d0-9638-6a4b191bb0b0",
+            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "containerId": "",
+            "name": "put curso",
+            "url": "http://localhost:3000/api/cursos/65d156cbced8b341f1306b90",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-18T04:07:27.885Z",
+            "modified": "2024-02-18T08:49:39.185Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Filosofia I\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "512172e7-7f7d-4ed6-8fe5-78e4aa5014f8",
+            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "containerId": "",
+            "name": "delete curso",
+            "url": "http://localhost:3000/api/cursos/65d18223fd5b608a11517058",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-02-18T08:18:55.942Z",
+            "modified": "2024-02-18T08:50:19.593Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
