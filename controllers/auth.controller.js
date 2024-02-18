@@ -5,13 +5,14 @@ const { generarJWT } = require("../helpers/generar-jwt");
 
 const login = async (req = request, res = request) => {
     const {correo, password} = req.body;
-
+    
     try{
         const usuario = await Usuario.findOne({correo});
 
         if(!usuario){
             return res.status(400).json({
                 msg:"Credenciales incorrectas, este correo no existe en la base de datos"
+                console.log("hi");
             });
         }
 
