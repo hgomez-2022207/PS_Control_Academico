@@ -3,6 +3,7 @@ const Curso = require('../models/curso');
 const { response } = require('express');
 
 const cursoPost = async (req,res) => {
+    console.log("hi");
     const{nombre,estado} = req.body;
     const curso = new Curso({nombre,estado});
 
