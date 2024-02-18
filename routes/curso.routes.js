@@ -28,4 +28,14 @@ router.get(
     ],getCursoById
 );
 
+router.put(
+    '/:id',
+    [
+        check('id','No es un curso').isMongoId(),
+        check('id').custom(existeCursoById),
+        check('nombre','Escriba la nueva informacion del curso.').not().isEmpty(),
+        
+    ],cursoPut
+);
+
 module.exports = router;
