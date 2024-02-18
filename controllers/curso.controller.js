@@ -40,9 +40,43 @@ const cursoGet = async (req, res = response) => {
     });
 }
 
+const cursoPut = async (req, res = response) =>{
+    const{ id } = req.params;
+    const { _id, ...nombre} = req.body;
+
+    await Curso.findByIdAndUpdate(id, nombre)
+    const curso = await Curso.findByIdAndUpdate(id, nombre);
+
+    res.status(200).json({
+        msg: "El curso ha sido Actualizado",
+        curso
+    });
+}
+
+/*const putUsuarios = async (req, res = response) =>{
+    const { id } = req.params;
+    const {_id, password, google, correo, ...resto } = req.body;
+
+    if(password){
+        const salt = bcryptjs.genSaltSync();
+        resto.password = bcryptjs.hashSync(password, salt);
+    }
+
+    await Usuario.findByIdAndUpdate(id, resto);
+
+    const usuario = Usuario.findOne({id});
+
+    res.status(200).json({
+        msg: 'Usuario Actualizado Exitosamente!!!',
+        usuario
+    });
+}
+*/ 
+
 module.exports = {
     cursoPost,
     cursoGet,
-    getCursoById
+    getCursoById,
+    cursoPut
 }
 
