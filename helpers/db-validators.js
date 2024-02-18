@@ -1,5 +1,7 @@
+const { Cursor } = require('mongoose');
 const Role = require('../models/role');
 const Usuario = require('../models/usuario');
+const Curso = require('../models/curso');
 
 const esRoleValido = async (role = '') => {
     const existeRol = await Role.findOne({role});
@@ -22,8 +24,16 @@ const existeUsuarioById = async (id = '') => {
     }
 }
 
+const existeCursoById = async (id = '') => {
+    const existeCurso = await Curso.findOne({id});
+    if(existeCurso){
+        throw new Error(`No ofrecemos este curso ${id}`);
+    }
+}
+
 module.exports = {
     esRoleValido,
     existeEmail,
-    existeUsuarioById
+    existeUsuarioById,
+    existeCursoById
 }
