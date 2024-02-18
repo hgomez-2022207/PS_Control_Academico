@@ -35,14 +35,14 @@ const login = async (req = request, res = request) => {
         res.status(200).json({
             msg: "Welcome",
             usuario,
-            token
+            tokken
         })
 
     }catch(e){
         console.log(e);
         res.status(500).json()({
             msg: "Comuniquese con el admin"
-        }   );
+        });
 
         
     }
