@@ -17,9 +17,7 @@ router.post(
     ],cursoPost
 );
 
-router.get(
-    '/', cursoGet
-);
+router.get('/', cursoGet);
 
 router.get(
     "/:id",
