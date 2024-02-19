@@ -3,7 +3,8 @@ const {check} = require('express-validator');
 
 // const {validarCampos} = require('../middlewares/validar-campos');
 
-const { validarCampos, esAdminRole, tieneRolAutorizado } = require('../middlewares/validar-campos');
+const { validarCampos} = require('../middlewares/validar-campos');
+const { esMaestroRole, tieneRolAutorizado} = require('../middlewares/validar-roles')
 const { validarJWT } = require('../middlewares/validar-jwt');
 
 
@@ -26,7 +27,7 @@ router.post(
         check('curso1','El nombre del curso'),
         check('curso2','El nombre del curso'),
         check('curso3','El nombre del curso'),
-        validarCampos
+        validarCampos,
     ], usuarioPost
 );  
 
@@ -37,7 +38,8 @@ router.put(
         check('id').custom(existeUsuarioById),
         check("nombre","El nombre no debe estar vacio").not().isEmpty(),
         //check('role').custom(esRoleValido),
-        validarCampos
+        validarCampos,
+        validarJWT
     ], putUsuarios
 );
 
@@ -46,7 +48,8 @@ router.delete(
     [
         check('id', 'No es un id válido').isMongoId(),
         check('id').custom(existeUsuarioById),
-        validarCampos
+        validarCampos,
+        validarJWT
     ], usuarioDelete
 );
 

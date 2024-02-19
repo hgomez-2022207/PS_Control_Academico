@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Profesor",
-    "dateExported": "2024-02-18T09:00:08.971Z",
+    "dateExported": "2024-02-19T05:13:25.845Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-16T07:02:17.600Z",
-            "modified": "2024-02-18T08:48:48.684Z",
+            "modified": "2024-02-19T05:09:28.394Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Adolfo Gonzales\",\n  \"email\":\"agomez-2022210@kinal.edu.gt\",\n  \"password\":\"1234567\",\n  \"role\":\"STUDENT_ROLE\",\n  \"curso1\":\"Matematica\",\n  \"curso2\":\"Etica\", \n  \"curso3\":\"Informatica\"\n}",
+                "raw": "{\n  \"nombre\":\"Adolfo Gonzales\",\n  \"email\":\"aloe-2022210@kinal.edu.gt\",\n  \"password\":\"1234567\",\n  \"role\":\"TEACHER_ROLE\",\n  \"curso1\":\"Matematica\",\n  \"curso2\":\"Etica\", \n  \"curso3\":\"Informatica\"\n}",
                 "form": []
             },
             "tests": []
@@ -33,12 +33,17 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-02-17T03:42:59.829Z",
-            "modified": "2024-02-18T08:49:08.545Z",
-            "headers": [],
+            "modified": "2024-02-19T05:09:58.686Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Filosofia III\"\n}",
+                "raw": "{\n  \"nombre\":\"Mate II\"\n}",
                 "form": []
             },
             "tests": []
@@ -52,8 +57,13 @@
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-02-18T01:20:56.885Z",
-            "modified": "2024-02-18T08:50:05.210Z",
-            "headers": [],
+            "modified": "2024-02-19T05:11:22.766Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                }
+            ],
             "params": [],
             "tests": []
         },
@@ -91,12 +101,17 @@
             "method": "PUT",
             "sortNum": 50000,
             "created": "2024-02-18T04:07:27.885Z",
-            "modified": "2024-02-18T08:49:39.185Z",
-            "headers": [],
+            "modified": "2024-02-19T05:11:54.840Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Filosofia I\"\n}",
+                "raw": "{\n  \"nombre\":\"Filosofia V\"\n}",
                 "form": []
             },
             "tests": []
@@ -110,8 +125,13 @@
             "method": "DELETE",
             "sortNum": 60000,
             "created": "2024-02-18T08:18:55.942Z",
-            "modified": "2024-02-18T08:50:19.593Z",
-            "headers": [],
+            "modified": "2024-02-19T05:12:11.540Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                }
+            ],
             "params": [],
             "tests": []
         }

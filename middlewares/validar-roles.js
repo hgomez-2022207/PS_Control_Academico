@@ -19,6 +19,7 @@ const esMaestroRole = (req, res, next) => {
 
 const tieneRolAutorizado = (...roles) => {
     return (req =request, res = response, next) =>{
+        console.log(req.usuario)
         if(!req.usuario){
             return res.status(500).json({
                 msg: "Se desea validar un usuario sin validar token primero"

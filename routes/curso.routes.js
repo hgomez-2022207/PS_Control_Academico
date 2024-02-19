@@ -6,25 +6,29 @@ const { validarJWT } = require('../middlewares');
 
 const{ cursoPost, getCursoById, cursoGet, cursoPut, cursoDelete } = require('../controllers/curso.controller');
 const {existeCursoById, esRoleValido} = require('../helpers/db-validators');
+const { esMaestroRole, tieneRolAutorizado} = require('../middlewares/validar-roles')
 
 const router = Router();
 
 router.post(
     "/",
     [
-        check('nombre','El nombre del curso es obligatorio').not().isEmpty()
-        
+        check('nombre','El nombre del curso es obligatorio').not().isEmpty(),
+        validarJWT,
+        tieneRolAutorizado('TEACHER_ROLE')
     ],cursoPost
 );
 
-router.get('/', cursoGet);
+router.get('/',[validarJWT,
+    tieneRolAutorizado('TEACHER_ROLE')], cursoGet);
 
 router.get(
     "/:id",
     [
         check('id','No es un curso').isMongoId(),
         check('id').custom(existeCursoById),
-        validarCampos
+        validarJWT,
+        tieneRolAutorizado('TEACHER_ROLE')
     ],getCursoById
 );
 
@@ -34,18 +38,20 @@ router.put(
         check('id','No es un curso').isMongoId(),
         check('id').custom(existeCursoById),
         check('nombre','Escriba la nueva informacion del curso.').not().isEmpty(),
-        
+        validarJWT,
+        tieneRolAutorizado('TEACHER_ROLE')
     ],cursoPut
 );
 
 router.delete(
     "/:id",
     [
-        // validarJWT,
-        //tieneRolAutorizado('TEACHER_ROLE'),
+        validarJWT,
+        tieneRolAutorizado('TEACHER_ROLE'),
         check('id','Curso no existente').isMongoId(),
         check('role').custom(esRoleValido),
-       // validarCampos
+        validarJWT,
+        tieneRolAutorizado('TEACHER_ROLE')
     ],cursoDelete
 );
 

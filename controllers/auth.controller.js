@@ -7,7 +7,7 @@ const login = async (req = request, res = request) => {
     const {correo, password} = req.body;
     
     try{
-        const usuario = await Usuario.findOne({correo});
+        const usuario = await Usuario.findOne({email: correo});
 
         if(!usuario){
             return res.status(400).json({

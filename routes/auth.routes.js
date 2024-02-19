@@ -10,7 +10,7 @@ router.post(
     '/login',
     [
         
-        check('email','Este correo no es valido').isEmail(),
+        check('correo','Este correo no es valido').isEmail(),
         check('password','El password es obligatorio').not().isEmpty(),
         validarCampos
     ], login
