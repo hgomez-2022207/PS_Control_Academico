@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Profesor",
-    "dateExported": "2024-02-19T05:13:25.845Z",
+    "dateExported": "2024-02-19T05:30:31.959Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -33,11 +33,11 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-02-17T03:42:59.829Z",
-            "modified": "2024-02-19T05:09:58.686Z",
+            "modified": "2024-02-19T05:28:32.216Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
                 }
             ],
             "params": [],
@@ -57,11 +57,11 @@
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-02-18T01:20:56.885Z",
-            "modified": "2024-02-19T05:11:22.766Z",
+            "modified": "2024-02-19T05:28:46.833Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
                 }
             ],
             "params": [],
@@ -76,8 +76,13 @@
             "method": "GET",
             "sortNum": 40000,
             "created": "2024-02-18T01:22:04.628Z",
-            "modified": "2024-02-18T01:53:31.329Z",
-            "headers": [],
+            "modified": "2024-02-19T05:29:33.348Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
+                }
+            ],
             "params": [
                 {
                     "name": "desde",
@@ -101,11 +106,11 @@
             "method": "PUT",
             "sortNum": 50000,
             "created": "2024-02-18T04:07:27.885Z",
-            "modified": "2024-02-19T05:11:54.840Z",
+            "modified": "2024-02-19T05:29:57.826Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
                 }
             ],
             "params": [],
@@ -125,11 +130,11 @@
             "method": "DELETE",
             "sortNum": 60000,
             "created": "2024-02-18T08:18:55.942Z",
-            "modified": "2024-02-19T05:12:11.540Z",
+            "modified": "2024-02-19T05:30:07.857Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMTkzODQsImV4cCI6MTcwODMyNjU4NH0.nWL6_8OoKgH6y2IOd2rfBLwn8G4EKDu9VNB34x_6jxI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
                 }
             ],
             "params": [],
