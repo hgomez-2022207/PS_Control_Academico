@@ -3,7 +3,8 @@ const Usuario = require('../models/usuario');
 const { response } = require('express');
 
 const usuarioPost = async (req, res) => {
-    const {nombre, email, password, role, curso1, curso2, curso3} = req.body;
+    const {nombre, email, password, curso1, curso2, curso3} = req.body;
+    role = 'TEACHER_ROLE'
     const usuario = new Usuario({nombre, email, password, role , curso1, curso2, curso3});
 
     const salt = bcryptjs.genSaltSync();
@@ -15,6 +16,19 @@ const usuarioPost = async (req, res) => {
     });
 }
 
+const studentPost = async (req, res) => {
+    const {nombre, email, password, curso1, curso2, curso3} = req.body;
+    role = 'STUDENT_ROLE'
+    const usuario = new Usuario({nombre, email, password, role , curso1, curso2, curso3});
+
+    const salt = bcryptjs.genSaltSync();
+    usuario.password = bcryptjs.hashSync(password, salt);
+
+    await usuario.save();
+    res.status(202).json({
+        usuario
+    });
+}
 const usuarioDelete = async (req, res) =>{
     const { id } = req.params;
     const usuario = await Usuario.findByIdAndUpdate(id, { estado: false});
@@ -50,5 +64,6 @@ const putUsuarios = async (req, res = response) =>{
 module.exports = {
     usuarioPost,
     usuarioDelete,
-    putUsuarios
+    putUsuarios,
+    studentPost
 }
