@@ -1,92 +1,92 @@
 {
     "client": "Thunder Client",
     "collectionName": "Profesor",
-    "dateExported": "2024-02-19T05:30:31.959Z",
+    "dateExported": "2024-02-27T23:00:48.688Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "05c3df25-0419-4e7c-91d8-ce08a9e6a5fa",
-            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "_id": "9fbf24ff-79c6-49e6-9c27-09613f4cf576",
+            "colId": "3cb468b8-d9d1-4692-b9c2-505f0f3ba6c5",
             "containerId": "",
             "name": "post profesor",
-            "url": "http://localhost:3000/api/Usuarios",
+            "url": "http://localhost:3000/api/Usuarios/taecher",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-16T07:02:17.600Z",
-            "modified": "2024-02-19T05:09:28.394Z",
+            "created": "2024-02-27T18:56:26.198Z",
+            "modified": "2024-02-27T20:19:21.249Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Adolfo Gonzales\",\n  \"email\":\"aloe-2022210@kinal.edu.gt\",\n  \"password\":\"1234567\",\n  \"role\":\"TEACHER_ROLE\",\n  \"curso1\":\"Matematica\",\n  \"curso2\":\"Etica\", \n  \"curso3\":\"Informatica\"\n}",
+                "raw": "{\n  \"nombre\":\"Adolfo Gonzales\",\n  \"email\":\"ajloe-2022210@kinal.edu.gt\",\n  \"password\":\"1234567\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "83a3d424-05db-44ce-a2b5-e3911ba5c6dd",
-            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "_id": "dcf2ba74-f48b-4652-ae22-fe426a8c250d",
+            "colId": "3cb468b8-d9d1-4692-b9c2-505f0f3ba6c5",
             "containerId": "",
             "name": "post curso",
             "url": "http://localhost:3000/api/cursos",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-02-17T03:42:59.829Z",
-            "modified": "2024-02-19T05:28:32.216Z",
+            "created": "2024-02-27T18:56:26.200Z",
+            "modified": "2024-02-27T22:16:21.310Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNzIwNDUsImV4cCI6MTcwOTA3OTI0NX0.O03UqiT8LSK40sea0CapDNql5qgJEAKEzKGKI8qMYEA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Mate II\"\n}",
+                "raw": "{\n  \"nombre\":\"Mate I\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "aaefd7e3-9e97-4e7c-a7b2-d9fa99064378",
-            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "_id": "3bb8ab98-4b0c-40fc-a0cc-b9cca71d4a93",
+            "colId": "3cb468b8-d9d1-4692-b9c2-505f0f3ba6c5",
             "containerId": "",
             "name": "get cursoBiId",
-            "url": "http://localhost:3000/api/cursos/65d18223fd5b608a11517058",
+            "url": "http://localhost:3000/api/cursos/65de592abf409a7bef0c324e",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-02-18T01:20:56.885Z",
-            "modified": "2024-02-19T05:28:46.833Z",
+            "created": "2024-02-27T18:56:26.201Z",
+            "modified": "2024-02-27T22:57:02.047Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNzQ1NzYsImV4cCI6MTcwOTA4MTc3Nn0.zWq_dNZlqAqgusZGhbgN_M0lALQ3FB_vgqle63INl-w"
                 }
             ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "16a7ef81-19c4-44fe-9a90-b81253126cb2",
-            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "_id": "dfba0eb7-dcec-46f5-8e1e-d48171acfc9c",
+            "colId": "3cb468b8-d9d1-4692-b9c2-505f0f3ba6c5",
             "containerId": "",
             "name": "get cursos",
-            "url": "http://localhost:3000/api/cursos?desde=1&limite=10",
+            "url": "http://localhost:3000/api/cursos?desde=0&limite=10",
             "method": "GET",
             "sortNum": 40000,
-            "created": "2024-02-18T01:22:04.628Z",
-            "modified": "2024-02-19T05:29:33.348Z",
+            "created": "2024-02-27T18:56:26.202Z",
+            "modified": "2024-02-27T22:56:32.699Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNzQ1NzYsImV4cCI6MTcwOTA4MTc3Nn0.zWq_dNZlqAqgusZGhbgN_M0lALQ3FB_vgqle63INl-w"
                 }
             ],
             "params": [
                 {
                     "name": "desde",
-                    "value": "1",
+                    "value": "0",
                     "isPath": false
                 },
                 {
@@ -98,19 +98,19 @@
             "tests": []
         },
         {
-            "_id": "122e90af-8ecf-43d0-9638-6a4b191bb0b0",
-            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "_id": "5744a432-9c8c-4c2b-8394-c9ff2ca70e6f",
+            "colId": "3cb468b8-d9d1-4692-b9c2-505f0f3ba6c5",
             "containerId": "",
             "name": "put curso",
-            "url": "http://localhost:3000/api/cursos/65d156cbced8b341f1306b90",
+            "url": "http://localhost:3000/api/cursos/65de43e737494b4999d6936e",
             "method": "PUT",
             "sortNum": 50000,
-            "created": "2024-02-18T04:07:27.885Z",
-            "modified": "2024-02-19T05:29:57.826Z",
+            "created": "2024-02-27T18:56:26.203Z",
+            "modified": "2024-02-27T20:24:39.731Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNjU0NDUsImV4cCI6MTcwOTA3MjY0NX0._N0TTFHrcWuvsHc_IoPWkcd6QVOlFltbF0dil38WMKg"
                 }
             ],
             "params": [],
@@ -122,22 +122,41 @@
             "tests": []
         },
         {
-            "_id": "512172e7-7f7d-4ed6-8fe5-78e4aa5014f8",
-            "colId": "843d2cb4-7a19-44e2-9cfe-6e12f51d807d",
+            "_id": "979a270d-7a9e-4dd6-b6be-1219cac22cce",
+            "colId": "3cb468b8-d9d1-4692-b9c2-505f0f3ba6c5",
             "containerId": "",
             "name": "delete curso",
-            "url": "http://localhost:3000/api/cursos/65d18223fd5b608a11517058",
+            "url": "http://localhost:3000/api/cursos/65de43e737494b4999d6936e",
             "method": "DELETE",
             "sortNum": 60000,
-            "created": "2024-02-18T08:18:55.942Z",
-            "modified": "2024-02-19T05:30:07.857Z",
+            "created": "2024-02-27T18:56:26.204Z",
+            "modified": "2024-02-27T20:24:49.392Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyZTI4ODQ1MzhmODYxYmI5ZDhkZmYiLCJpYXQiOjE3MDgzMjA0OTQsImV4cCI6MTcwODMyNzY5NH0.ZSpLK5zpaD4K6-FQejsc-tqrya2foFAiIBZFjLBDHMg"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNjU0NDUsImV4cCI6MTcwOTA3MjY0NX0._N0TTFHrcWuvsHc_IoPWkcd6QVOlFltbF0dil38WMKg"
                 }
             ],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1065405a-c848-4b97-ab2c-56badc565b63",
+            "colId": "3cb468b8-d9d1-4692-b9c2-505f0f3ba6c5",
+            "containerId": "",
+            "name": "post join",
+            "url": "http://localhost:3000/api/joins",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-27T22:54:13.558Z",
+            "modified": "2024-02-27T22:59:55.330Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Mate III\",\n  \"usuario\":\"c c\"\n}\n",
+                "form": []
+            },
             "tests": []
         }
     ]

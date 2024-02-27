@@ -1,40 +1,45 @@
 {
     "client": "Thunder Client",
     "collectionName": "Alumno",
-    "dateExported": "2024-02-19T05:13:03.002Z",
+    "dateExported": "2024-02-27T23:00:58.232Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "75404df9-ecf4-431a-b331-fff512b29c9f",
-            "colId": "6ce3321f-2ec5-462a-90fc-d11eb3081dd2",
+            "_id": "e3a775a9-9e08-44cf-9db9-2d46311be742",
+            "colId": "62567baf-fff0-48a4-bc85-7c0b90d87311",
             "containerId": "",
             "name": "post alumno",
-            "url": "http://localhost:3000/api/Usuarios",
+            "url": "http://localhost:3000/api/Usuarios/student",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-16T02:01:34.478Z",
-            "modified": "2024-02-19T04:26:51.218Z",
+            "created": "2024-02-27T19:01:28.143Z",
+            "modified": "2024-02-27T20:18:14.511Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Brandon Gomez\",\n  \"email\":\"bgomez-2022208@kinal.edu.gt\",\n  \"password\":\"1234567\",\n  \"role\":\"STUDENT_ROLE\",\n  \"curso1\":\"Matematica\",\n  \"curso2\":\"Etica\", \n  \"curso3\":\"Informatica\"\n}",
+                "raw": "{\n  \"nombre\":\"Fer Gomez\",\n  \"email\":\"nando-2022208@kinal.edu.gt\",\n  \"password\":\"1234567\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "8ca882ac-754d-41f4-925a-9f8a209494c1",
-            "colId": "6ce3321f-2ec5-462a-90fc-d11eb3081dd2",
+            "_id": "99b2f05d-4d3c-483e-846b-5c32912a3024",
+            "colId": "62567baf-fff0-48a4-bc85-7c0b90d87311",
             "containerId": "",
             "name": "put alumno",
-            "url": "http://localhost:3000/api/usuarios/65cefe7714709e2860365c1a",
+            "url": "http://localhost:3000/api/usuarios/65de33645215bf57d0162998",
             "method": "PUT",
             "sortNum": 20000,
-            "created": "2024-02-16T07:08:35.695Z",
-            "modified": "2024-02-16T08:47:20.243Z",
-            "headers": [],
+            "created": "2024-02-27T19:01:28.144Z",
+            "modified": "2024-02-27T21:51:56.728Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNjUxNzYsImV4cCI6MTcwOTA3MjM3Nn0.FtqbxUI5RaZRRK0YvV63Jf3lYx4dfALcfSRgfC5Em44"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
@@ -44,17 +49,85 @@
             "tests": []
         },
         {
-            "_id": "76ceb30a-6a35-4c1b-a981-450b1192eeb3",
-            "colId": "6ce3321f-2ec5-462a-90fc-d11eb3081dd2",
+            "_id": "3b47aa11-da4a-4133-b66c-f2d9c5a22254",
+            "colId": "62567baf-fff0-48a4-bc85-7c0b90d87311",
             "containerId": "",
             "name": "delete alumno",
-            "url": "http://localhost:3000/api/usuarios/65ceff65306f1c00b3bd0fe7",
+            "url": "http://localhost:3000/api/usuarios/65de33645215bf57d0162998?x-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNjUxNzYsImV4cCI6MTcwOTA3MjM3Nn0.FtqbxUI5RaZRRK0YvV63Jf3lYx4dfALcfSRgfC5Em44",
             "method": "DELETE",
             "sortNum": 30000,
-            "created": "2024-02-16T07:12:37.475Z",
-            "modified": "2024-02-16T07:24:46.417Z",
+            "created": "2024-02-27T19:01:28.145Z",
+            "modified": "2024-02-27T21:53:21.460Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNjUxNzYsImV4cCI6MTcwOTA3MjM3Nn0.FtqbxUI5RaZRRK0YvV63Jf3lYx4dfALcfSRgfC5Em44"
+                }
+            ],
+            "params": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNDNjOTM3NDk0YjQ5OTlkNjkzNmEiLCJpYXQiOjE3MDkwNjUxNzYsImV4cCI6MTcwOTA3MjM3Nn0.FtqbxUI5RaZRRK0YvV63Jf3lYx4dfALcfSRgfC5Em44",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "2cc6f347-44e4-4c77-acb7-e448a9a77c79",
+            "colId": "62567baf-fff0-48a4-bc85-7c0b90d87311",
+            "containerId": "",
+            "name": "get cursoByName",
+            "url": "http://localhost:3000/api/cursos/Mate II",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-27T19:53:06.380Z",
+            "modified": "2024-02-27T20:02:21.794Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlMzNhYjUyMTViZjU3ZDAxNjI5OWUiLCJpYXQiOjE3MDkwNjQxMjMsImV4cCI6MTcwOTA3MTMyM30.qaytDyitEeoevfJaFTLYdYi99Xq2tvCDfchYbdvNMlw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "08dcdebb-e0bd-41ba-bdd3-4ca0ea9e117e",
+            "colId": "62567baf-fff0-48a4-bc85-7c0b90d87311",
+            "containerId": "",
+            "name": "post join",
+            "url": "http://localhost:3000/api/joins",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-27T21:24:49.630Z",
+            "modified": "2024-02-27T22:27:36.480Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Mate III\",\n  \"usuario\":\"Adolfo Gonzales\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e004fb0e-8313-435a-bcee-d72add49f650",
+            "colId": "62567baf-fff0-48a4-bc85-7c0b90d87311",
+            "containerId": "",
+            "name": "post join Copy",
+            "url": "http://localhost:3000/api/joins",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-27T22:53:35.697Z",
+            "modified": "2024-02-27T23:00:33.087Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Mate I\",\n  \"usuario\":\"Herlin Fernando\"\n}\n",
+                "form": []
+            },
             "tests": []
         }
     ]
