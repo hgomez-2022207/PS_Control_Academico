@@ -10,10 +10,24 @@ const esRoleValido = async (role = '') => {
     }
 }
 
+const esCursoValido = async (curso = '') => {
+    const existeCurso = await Curso.findOne({curso});
+    if(!existeCurso){
+        throw new Error(`El curso ${ curso } no existe en la base de datos`);
+    }
+}
+
 const existeEmail = async (correo = '') => {
     const existeEmail = await Usuario.findOne({correo});
     if(existeEmail){
         throw new Error(`El usuario con el ${ id } no existe`);
+    }
+}
+
+const existeCurso = async (nombre = '') => {
+    const existeEmail = await Curso.findOne({nombre});
+    if(existeEmail){
+        throw new Error(`El curso con el ${ id } no existe`);
     }
 }
 
