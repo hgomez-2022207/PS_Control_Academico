@@ -10,26 +10,41 @@ const { validarJWT } = require('../middlewares/validar-jwt');
 
 // const {usuarioPost} = require('../helpers/db-validators');
 
-const {usuarioPost, usuarioDelete, putUsuarios} = require('../controllers/user.controllers');
+const {usuarioPost, usuarioDelete, putUsuarios, studentPost} = require('../controllers/user.controllers');
 
 const {existeEmail, esRoleValido, existeUsuarioById} = require('../helpers/db-validators');
 
 const router = Router();
 
 router.post(
-    "/",
+    "/taecher",
     [
         check("nombre","El nombre no debe estar vacio").not().isEmpty(),
         check('email','La cuenta del usuario').isEmail(),
         check('password','Importante si deseas acceder a la cuenta').isLength({min:6}),
         check('email').custom(existeEmail),
-        check('role').custom(esRoleValido),
+        //check('role').custom(esRoleValido),
         check('curso1','El nombre del curso'),
         check('curso2','El nombre del curso'),
         check('curso3','El nombre del curso'),
         validarCampos,
     ], usuarioPost
 );  
+
+router.post(
+    "/student",
+    [
+        check("nombre","El nombre no debe estar vacio").not().isEmpty(),
+        check('email','La cuenta del usuario').isEmail(),
+        check('password','Importante si deseas acceder a la cuenta').isLength({min:6}),
+        check('email').custom(existeEmail),
+        //check('role').custom(esRoleValido),
+        check('curso1','El nombre del curso'),
+        check('curso2','El nombre del curso'),
+        check('curso3','El nombre del curso'),
+        validarCampos,
+    ], studentPost
+); 
 
 router.put(
     "/:id",
