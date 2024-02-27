@@ -5,7 +5,7 @@ const { validarCampos} = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares');
 
 const{ cursoPost, getCursoById, cursoGet, cursoPut, cursoDelete, getCursoByName } = require('../controllers/curso.controller');
-const {existeCursoById, esRoleValido} = require('../helpers/db-validators');
+const {existeCursoById, esRoleValido, existeCursoByName} = require('../helpers/db-validators');
 const { esMaestroRole, tieneRolAutorizado} = require('../middlewares/validar-roles')
 
 const router = Router();
@@ -33,7 +33,7 @@ router.get(
 );
 
 router.get(
-    "/:id",
+    "/:name",
     [
         check('name','No es un curso').isMongoId(),
         check('name').custom(existeCursoByName),

@@ -25,7 +25,7 @@ const getCursoById = async (req, res = response) =>{
 
 const getCursoByName = async (req, res = response) =>{
     const { name } = req.params;
-    const curso = await Curso.findOne({_name:name});
+    const curso = await Curso.findOne({name});
 
     res.status(200).json({
         curso

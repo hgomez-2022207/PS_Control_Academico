@@ -24,10 +24,10 @@ const existeEmail = async (correo = '') => {
     }
 }
 
-const existeCursoByName = async (nombre = '') => {
-    const existeEmail = await Curso.findOne({nombre});
-    if(existeEmail){
-        throw new Error(`El curso con el ${ id } no existe`);
+const existeCursoByName = async (name = '') => {
+    const existeCurso = await Curso.findOne({name});
+    if(existeCurso){
+        throw new Error(`El curso con el ${ name } no existe`);
     }
 }
 
