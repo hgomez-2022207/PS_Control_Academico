@@ -9,6 +9,7 @@ class Server{
         this.usuarioPath = '/api/usuarios';
         this.authPath = '/api/auth';
         this.cursoPath = '/api/cursos';
+        this.joinPath = '/api/joins'
 
         this.conectarDB();
         this.middlewares();
@@ -30,6 +31,7 @@ class Server{
         this.app.use(this.authPath, require('../routes/auth.routes'));
         this.app.use(this.usuarioPath, require('../routes/user.routes.js'));
         this.app.use(this.cursoPath, require('../routes/curso.routes.js'));
+        this.app.use(this.joinPath, require('../routes/join.routes.js'));
     }
 
     listen(){

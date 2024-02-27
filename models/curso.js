@@ -8,6 +8,9 @@ const CursoSchema = Schema({
     estado:{
         type: Boolean,
         default: true
+    },
+    usuario:{
+        type: [String],
     }
 });
 
