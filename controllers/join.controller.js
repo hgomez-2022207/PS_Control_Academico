@@ -20,6 +20,7 @@ const joinPost = async(req, res) =>{
             });
         }
         // await Curso.findByIdAndUpdate(id, nombre)
+        curso.usuario.push(usuario)
         await curso.save();
  
         res.status(200).json({
