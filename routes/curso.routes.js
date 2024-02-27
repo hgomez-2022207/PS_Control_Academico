@@ -4,7 +4,7 @@ const { check } = require('express-validator');
 const { validarCampos} = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares');
 
-const{ cursoPost, getCursoById, cursoGet, cursoPut, cursoDelete } = require('../controllers/curso.controller');
+const{ cursoPost, getCursoById, cursoGet, cursoPut, cursoDelete, getCursoByName } = require('../controllers/curso.controller');
 const {existeCursoById, esRoleValido} = require('../helpers/db-validators');
 const { esMaestroRole, tieneRolAutorizado} = require('../middlewares/validar-roles')
 
@@ -30,6 +30,15 @@ router.get(
         validarJWT,
         tieneRolAutorizado('TEACHER_ROLE')
     ],getCursoById
+);
+
+router.get(
+    "/:id",
+    [
+        check('name','No es un curso').isMongoId(),
+        check('name').custom(existeCursoByName),
+        validarJWT
+    ],getCursoByName
 );
 
 router.put(

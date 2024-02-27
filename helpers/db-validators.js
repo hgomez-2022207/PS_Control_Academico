@@ -24,7 +24,7 @@ const existeEmail = async (correo = '') => {
     }
 }
 
-const existeCurso = async (nombre = '') => {
+const existeCursoByName = async (nombre = '') => {
     const existeEmail = await Curso.findOne({nombre});
     if(existeEmail){
         throw new Error(`El curso con el ${ id } no existe`);
@@ -49,5 +49,7 @@ module.exports = {
     esRoleValido,
     existeEmail,
     existeUsuarioById,
-    existeCursoById
+    existeCursoById,
+    existeCursoByName,
+    esCursoValido
 }

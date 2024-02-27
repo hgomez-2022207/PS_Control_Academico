@@ -23,15 +23,16 @@ const UsuarioSchema = Schema({
     },
     curso1:{
         type: String,
-        required:["El curso del alumno"]
+        //required:["El curso del alumno"],
+        
     },
     curso2:{
         type: String,
-        required:["El curso del alumno"]
+        //required:["El curso del alumno"]
     },
     curso3:{
         type: String,
-        required:["El curso del alumno"]
+        //required:["El curso del alumno"]
     },
     estado:{
         type: Boolean,

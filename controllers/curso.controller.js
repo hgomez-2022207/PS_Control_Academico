@@ -23,6 +23,15 @@ const getCursoById = async (req, res = response) =>{
     });
 }
 
+const getCursoByName = async (req, res = response) =>{
+    const { name } = req.params;
+    const curso = await Curso.findOne({_name:name});
+
+    res.status(200).json({
+        curso
+    });
+}
+
 const cursoGet = async (req, res = response) => {
     const {limite, desde} = req.query;
     const query = {estado: true};
@@ -71,6 +80,7 @@ module.exports = {
     cursoGet,
     getCursoById,
     cursoPut,
-    cursoDelete
+    cursoDelete,
+    getCursoByName
 }
 
